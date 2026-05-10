@@ -15,11 +15,11 @@
         :root {
             --gold: #d4af37;
             --dark-gold: #8b7500;
-            --cream: #121212;
-            --dark-cream: #0a0a0a;
+            --cream: #fafafa;
+            --dark-cream: #f0ead6;
             --deep-yellow: #ffc107;
-            --text-dark: #f5f5f5;
-            --text-light: #aaaaaa;
+            --text-dark: #2c1810;
+            --text-light: #5a4a42;
             --ornate: #c19b3d;
         }
 
@@ -43,9 +43,9 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: linear-gradient(135deg, #2c1810 0%, #1a0f08 100%);
+            background: rgba(26, 15, 8, 0.95); /* Deep rich brown for logo contrast */
             backdrop-filter: blur(10px);
-            padding: 1.2rem 5%;
+            padding: 1rem 5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -995,9 +995,9 @@
 </head>
 <body>
     <!-- NAVIGATION -->
-    <header style="background: rgba(44, 24, 16, 0.95); backdrop-filter: blur(10px);">
+    <header>
         <div class="logo">
-            <img src="logo.png" alt="Asian King Logo" style="height: 65px; filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.4)); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="logo.png" alt="Asian King Logo" style="height: 100px; filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.5)); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
         </div>
         <nav>
             <a href="#home">Home</a>
@@ -1487,12 +1487,34 @@
                 btn.style.opacity = '1';
                 btn.style.boxShadow = '0 10px 30px rgba(37, 211, 102, 0.4)';
                 
+                // Generate Digital Receipt
+                let receiptNo = Math.floor(Math.random() * 900000) + 100000;
+                let date = new Date().toLocaleDateString();
+                let receiptHTML = `
+                    <div style="margin-top: 2rem; padding: 2rem; background: #fff; border: 2px dashed #ccc; border-radius: 10px; color: #2c1810; text-align: left; animation: fadeIn 0.5s;">
+                        <h3 style="text-align: center; border-bottom: 1px solid #eee; padding-bottom: 1rem; margin-bottom: 1rem; font-family: 'Cinzel', serif; color: var(--gold);">ASIAN KING</h3>
+                        <p style="margin-bottom: 0.5rem; font-family: 'Montserrat', sans-serif;"><strong>Order No:</strong> #${receiptNo}</p>
+                        <p style="margin-bottom: 0.5rem; font-family: 'Montserrat', sans-serif;"><strong>Date:</strong> ${date}</p>
+                        <p style="margin-bottom: 0.5rem; font-family: 'Montserrat', sans-serif;"><strong>Status:</strong> <span style="color: #25D366; font-weight: bold;">PAID</span></p>
+                        <hr style="border: none; border-top: 1px dashed #ccc; margin: 1.5rem 0;">
+                        <p style="text-align: center; font-style: italic; font-family: 'Montserrat', sans-serif; font-size: 0.9rem;">Thank you for your order! Your digital receipt has been generated.</p>
+                    </div>
+                `;
+                
+                let existingReceipt = document.getElementById('order-receipt');
+                if(existingReceipt) existingReceipt.remove();
+                
+                let receiptContainer = document.createElement('div');
+                receiptContainer.id = 'order-receipt';
+                receiptContainer.innerHTML = receiptHTML;
+                btn.parentNode.insertBefore(receiptContainer, btn.nextSibling);
+                
                 setTimeout(() => {
                     btn.innerHTML = 'Complete Order';
                     btn.style.background = 'linear-gradient(135deg, var(--gold) 0%, var(--deep-yellow) 100%)';
                     btn.style.color = '#0a0a0a';
                     btn.style.boxShadow = '0 10px 30px rgba(212, 175, 55, 0.3)';
-                }, 5000);
+                }, 4000);
             }, 2500);
         }
 
