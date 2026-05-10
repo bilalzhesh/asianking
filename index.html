@@ -1187,49 +1187,215 @@
             <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 3rem;">
                 <!-- Menu Items -->
                 <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                    <h3 style="font-family: 'Cinzel', serif; margin-bottom: 1.5rem; border-bottom: 2px solid var(--gold); padding-bottom: 0.5rem; color: var(--gold);">Popular Dishes</h3>
-                    
+                    <h3 style="font-family: 'Cinzel', serif; margin-bottom: 1rem; margin-top: 1rem; border-bottom: 2px solid var(--gold); padding-bottom: 0.5rem; color: var(--gold);">Starters & Soups</h3>
                     <div class="cart-item-row" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
                         <div>
-                            <h4 style="font-size: 1.2rem; margin-bottom: 0.2rem; color: #2c1810;">Signature Sushi Boat</h4>
-                            <p style="color: var(--text-light); font-size: 0.9rem;">Assorted premium sushi and sashimi for 2.</p>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.2rem; color: #2c1810;">Edamame with Sea Salt</h4>
+                            <p style="color: var(--text-light); font-size: 0.85rem;">Steamed soybeans with premium sea salt.</p>
                         </div>
                         <div style="display: flex; align-items: center; gap: 1rem;">
-                            <span style="font-weight: bold; font-size: 1.1rem; color: #2c1810;">$65.00</span>
-                            <button onclick="addToCart('Signature Sushi Boat', 65.00)" style="background: var(--gold); border: none; padding: 0.5rem 1rem; border-radius: 20px; cursor: pointer; font-weight: bold; font-family: 'Montserrat', sans-serif; color: #fff;">+ Add</button>
+                            <span style="font-weight: bold; font-size: 1rem; color: #2c1810;">$6.00</span>
+                            <button onclick="addToCart('Edamame with Sea Salt', 6.00)" style="background: var(--gold); border: none; padding: 0.4rem 0.8rem; border-radius: 20px; cursor: pointer; font-weight: bold; font-family: 'Montserrat', sans-serif; color: #fff;">+ Add</button>
                         </div>
                     </div>
-                    
                     <div class="cart-item-row" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
                         <div>
-                            <h4 style="font-size: 1.2rem; margin-bottom: 0.2rem; color: #2c1810;">Spicy Miso Ramen</h4>
-                            <p style="color: var(--text-light); font-size: 0.9rem;">Authentic Japanese ramen with roasted pork belly.</p>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.2rem; color: #2c1810;">Prawn Tempura</h4>
+                            <p style="color: var(--text-light); font-size: 0.85rem;">Crispy battered king prawns with sweet chili sauce.</p>
                         </div>
                         <div style="display: flex; align-items: center; gap: 1rem;">
-                            <span style="font-weight: bold; font-size: 1.1rem; color: #2c1810;">$18.50</span>
-                            <button onclick="addToCart('Spicy Miso Ramen', 18.50)" style="background: var(--gold); border: none; padding: 0.5rem 1rem; border-radius: 20px; cursor: pointer; font-weight: bold; font-family: 'Montserrat', sans-serif; color: #fff;">+ Add</button>
+                            <span style="font-weight: bold; font-size: 1rem; color: #2c1810;">$14.50</span>
+                            <button onclick="addToCart('Prawn Tempura', 14.50)" style="background: var(--gold); border: none; padding: 0.4rem 0.8rem; border-radius: 20px; cursor: pointer; font-weight: bold; font-family: 'Montserrat', sans-serif; color: #fff;">+ Add</button>
                         </div>
                     </div>
-                    
                     <div class="cart-item-row" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
                         <div>
-                            <h4 style="font-size: 1.2rem; margin-bottom: 0.2rem; color: #2c1810;">Peking Duck Platter</h4>
-                            <p style="color: var(--text-light); font-size: 0.9rem;">Crispy skin duck served with pancakes and hoisin sauce.</p>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.2rem; color: #2c1810;">Chicken Gyoza</h4>
+                            <p style="color: var(--text-light); font-size: 0.85rem;">Pan-fried Japanese dumplings with soy dipping sauce.</p>
                         </div>
                         <div style="display: flex; align-items: center; gap: 1rem;">
-                            <span style="font-weight: bold; font-size: 1.1rem; color: #2c1810;">$42.00</span>
-                            <button onclick="addToCart('Peking Duck Platter', 42.00)" style="background: var(--gold); border: none; padding: 0.5rem 1rem; border-radius: 20px; cursor: pointer; font-weight: bold; font-family: 'Montserrat', sans-serif; color: #fff;">+ Add</button>
+                            <span style="font-weight: bold; font-size: 1rem; color: #2c1810;">$12.00</span>
+                            <button onclick="addToCart('Chicken Gyoza', 12.00)" style="background: var(--gold); border: none; padding: 0.4rem 0.8rem; border-radius: 20px; cursor: pointer; font-weight: bold; font-family: 'Montserrat', sans-serif; color: #fff;">+ Add</button>
                         </div>
                     </div>
-                    
-                    <div class="cart-item-row" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0;">
+                    <div class="cart-item-row" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
                         <div>
-                            <h4 style="font-size: 1.2rem; margin-bottom: 0.2rem; color: #2c1810;">Mango Sticky Rice</h4>
-                            <p style="color: var(--text-light); font-size: 0.9rem;">Traditional Thai dessert with sweet coconut milk.</p>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.2rem; color: #2c1810;">Tom Yum Soup</h4>
+                            <p style="color: var(--text-light); font-size: 0.85rem;">Spicy and sour Thai soup with shrimp and mushrooms.</p>
                         </div>
                         <div style="display: flex; align-items: center; gap: 1rem;">
-                            <span style="font-weight: bold; font-size: 1.1rem; color: #2c1810;">$12.00</span>
-                            <button onclick="addToCart('Mango Sticky Rice', 12.00)" style="background: var(--gold); border: none; padding: 0.5rem 1rem; border-radius: 20px; cursor: pointer; font-weight: bold; font-family: 'Montserrat', sans-serif; color: #fff;">+ Add</button>
+                            <span style="font-weight: bold; font-size: 1rem; color: #2c1810;">$11.50</span>
+                            <button onclick="addToCart('Tom Yum Soup', 11.50)" style="background: var(--gold); border: none; padding: 0.4rem 0.8rem; border-radius: 20px; cursor: pointer; font-weight: bold; font-family: 'Montserrat', sans-serif; color: #fff;">+ Add</button>
+                        </div>
+                    </div>
+                    <div class="cart-item-row" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
+                        <div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.2rem; color: #2c1810;">Spring Rolls</h4>
+                            <p style="color: var(--text-light); font-size: 0.85rem;">Crispy vegetable rolls served with plum sauce.</p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span style="font-weight: bold; font-size: 1rem; color: #2c1810;">$8.50</span>
+                            <button onclick="addToCart('Spring Rolls', 8.50)" style="background: var(--gold); border: none; padding: 0.4rem 0.8rem; border-radius: 20px; cursor: pointer; font-weight: bold; font-family: 'Montserrat', sans-serif; color: #fff;">+ Add</button>
+                        </div>
+                    </div><h3 style="font-family: 'Cinzel', serif; margin-bottom: 1rem; margin-top: 1rem; border-bottom: 2px solid var(--gold); padding-bottom: 0.5rem; color: var(--gold);">Sushi & Sashimi</h3>
+                    <div class="cart-item-row" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
+                        <div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.2rem; color: #2c1810;">Signature Sushi Boat</h4>
+                            <p style="color: var(--text-light); font-size: 0.85rem;">Assorted premium sushi and sashimi for 2.</p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span style="font-weight: bold; font-size: 1rem; color: #2c1810;">$65.00</span>
+                            <button onclick="addToCart('Signature Sushi Boat', 65.00)" style="background: var(--gold); border: none; padding: 0.4rem 0.8rem; border-radius: 20px; cursor: pointer; font-weight: bold; font-family: 'Montserrat', sans-serif; color: #fff;">+ Add</button>
+                        </div>
+                    </div>
+                    <div class="cart-item-row" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
+                        <div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.2rem; color: #2c1810;">Spicy Tuna Roll</h4>
+                            <p style="color: var(--text-light); font-size: 0.85rem;">Fresh tuna, spicy mayo, and cucumber.</p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span style="font-weight: bold; font-size: 1rem; color: #2c1810;">$16.00</span>
+                            <button onclick="addToCart('Spicy Tuna Roll', 16.00)" style="background: var(--gold); border: none; padding: 0.4rem 0.8rem; border-radius: 20px; cursor: pointer; font-weight: bold; font-family: 'Montserrat', sans-serif; color: #fff;">+ Add</button>
+                        </div>
+                    </div>
+                    <div class="cart-item-row" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
+                        <div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.2rem; color: #2c1810;">Dragon Roll</h4>
+                            <p style="color: var(--text-light); font-size: 0.85rem;">Eel, cucumber, topped with avocado and sweet sauce.</p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span style="font-weight: bold; font-size: 1rem; color: #2c1810;">$18.50</span>
+                            <button onclick="addToCart('Dragon Roll', 18.50)" style="background: var(--gold); border: none; padding: 0.4rem 0.8rem; border-radius: 20px; cursor: pointer; font-weight: bold; font-family: 'Montserrat', sans-serif; color: #fff;">+ Add</button>
+                        </div>
+                    </div>
+                    <div class="cart-item-row" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
+                        <div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.2rem; color: #2c1810;">Salmon Sashimi</h4>
+                            <p style="color: var(--text-light); font-size: 0.85rem;">6 pieces of thick-cut fresh Atlantic salmon.</p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span style="font-weight: bold; font-size: 1rem; color: #2c1810;">$22.00</span>
+                            <button onclick="addToCart('Salmon Sashimi', 22.00)" style="background: var(--gold); border: none; padding: 0.4rem 0.8rem; border-radius: 20px; cursor: pointer; font-weight: bold; font-family: 'Montserrat', sans-serif; color: #fff;">+ Add</button>
+                        </div>
+                    </div>
+                    <div class="cart-item-row" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
+                        <div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.2rem; color: #2c1810;">California Roll</h4>
+                            <p style="color: var(--text-light); font-size: 0.85rem;">Crab meat, avocado, and cucumber inside out.</p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span style="font-weight: bold; font-size: 1rem; color: #2c1810;">$14.00</span>
+                            <button onclick="addToCart('California Roll', 14.00)" style="background: var(--gold); border: none; padding: 0.4rem 0.8rem; border-radius: 20px; cursor: pointer; font-weight: bold; font-family: 'Montserrat', sans-serif; color: #fff;">+ Add</button>
+                        </div>
+                    </div><h3 style="font-family: 'Cinzel', serif; margin-bottom: 1rem; margin-top: 1rem; border-bottom: 2px solid var(--gold); padding-bottom: 0.5rem; color: var(--gold);">Main Course</h3>
+                    <div class="cart-item-row" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
+                        <div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.2rem; color: #2c1810;">Spicy Miso Ramen</h4>
+                            <p style="color: var(--text-light); font-size: 0.85rem;">Authentic Japanese ramen with roasted pork belly.</p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span style="font-weight: bold; font-size: 1rem; color: #2c1810;">$18.50</span>
+                            <button onclick="addToCart('Spicy Miso Ramen', 18.50)" style="background: var(--gold); border: none; padding: 0.4rem 0.8rem; border-radius: 20px; cursor: pointer; font-weight: bold; font-family: 'Montserrat', sans-serif; color: #fff;">+ Add</button>
+                        </div>
+                    </div>
+                    <div class="cart-item-row" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
+                        <div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.2rem; color: #2c1810;">Peking Duck Platter</h4>
+                            <p style="color: var(--text-light); font-size: 0.85rem;">Crispy skin duck served with pancakes and hoisin sauce.</p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span style="font-weight: bold; font-size: 1rem; color: #2c1810;">$42.00</span>
+                            <button onclick="addToCart('Peking Duck Platter', 42.00)" style="background: var(--gold); border: none; padding: 0.4rem 0.8rem; border-radius: 20px; cursor: pointer; font-weight: bold; font-family: 'Montserrat', sans-serif; color: #fff;">+ Add</button>
+                        </div>
+                    </div>
+                    <div class="cart-item-row" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
+                        <div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.2rem; color: #2c1810;">Pad Thai Noodles</h4>
+                            <p style="color: var(--text-light); font-size: 0.85rem;">Classic Thai stir-fried rice noodles with shrimp and peanuts.</p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span style="font-weight: bold; font-size: 1rem; color: #2c1810;">$17.00</span>
+                            <button onclick="addToCart('Pad Thai Noodles', 17.00)" style="background: var(--gold); border: none; padding: 0.4rem 0.8rem; border-radius: 20px; cursor: pointer; font-weight: bold; font-family: 'Montserrat', sans-serif; color: #fff;">+ Add</button>
+                        </div>
+                    </div>
+                    <div class="cart-item-row" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
+                        <div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.2rem; color: #2c1810;">Beef Teriyaki</h4>
+                            <p style="color: var(--text-light); font-size: 0.85rem;">Grilled prime beef steak glazed with sweet teriyaki sauce.</p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span style="font-weight: bold; font-size: 1rem; color: #2c1810;">$24.50</span>
+                            <button onclick="addToCart('Beef Teriyaki', 24.50)" style="background: var(--gold); border: none; padding: 0.4rem 0.8rem; border-radius: 20px; cursor: pointer; font-weight: bold; font-family: 'Montserrat', sans-serif; color: #fff;">+ Add</button>
+                        </div>
+                    </div>
+                    <div class="cart-item-row" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
+                        <div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.2rem; color: #2c1810;">Kung Pao Chicken</h4>
+                            <p style="color: var(--text-light); font-size: 0.85rem;">Spicy stir-fried chicken with peanuts and vegetables.</p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span style="font-weight: bold; font-size: 1rem; color: #2c1810;">$19.00</span>
+                            <button onclick="addToCart('Kung Pao Chicken', 19.00)" style="background: var(--gold); border: none; padding: 0.4rem 0.8rem; border-radius: 20px; cursor: pointer; font-weight: bold; font-family: 'Montserrat', sans-serif; color: #fff;">+ Add</button>
+                        </div>
+                    </div>
+                    <div class="cart-item-row" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
+                        <div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.2rem; color: #2c1810;">Green Curry</h4>
+                            <p style="color: var(--text-light); font-size: 0.85rem;">Thai green curry with coconut milk, bamboo shoots, and chicken.</p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span style="font-weight: bold; font-size: 1rem; color: #2c1810;">$21.00</span>
+                            <button onclick="addToCart('Green Curry', 21.00)" style="background: var(--gold); border: none; padding: 0.4rem 0.8rem; border-radius: 20px; cursor: pointer; font-weight: bold; font-family: 'Montserrat', sans-serif; color: #fff;">+ Add</button>
+                        </div>
+                    </div><h3 style="font-family: 'Cinzel', serif; margin-bottom: 1rem; margin-top: 1rem; border-bottom: 2px solid var(--gold); padding-bottom: 0.5rem; color: var(--gold);">Desserts & Drinks</h3>
+                    <div class="cart-item-row" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
+                        <div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.2rem; color: #2c1810;">Mango Sticky Rice</h4>
+                            <p style="color: var(--text-light); font-size: 0.85rem;">Traditional Thai dessert with sweet coconut milk.</p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span style="font-weight: bold; font-size: 1rem; color: #2c1810;">$12.00</span>
+                            <button onclick="addToCart('Mango Sticky Rice', 12.00)" style="background: var(--gold); border: none; padding: 0.4rem 0.8rem; border-radius: 20px; cursor: pointer; font-weight: bold; font-family: 'Montserrat', sans-serif; color: #fff;">+ Add</button>
+                        </div>
+                    </div>
+                    <div class="cart-item-row" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
+                        <div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.2rem; color: #2c1810;">Matcha Green Tea Mochi</h4>
+                            <p style="color: var(--text-light); font-size: 0.85rem;">Three pieces of Japanese ice cream wrapped in rice dough.</p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span style="font-weight: bold; font-size: 1rem; color: #2c1810;">$9.50</span>
+                            <button onclick="addToCart('Matcha Green Tea Mochi', 9.50)" style="background: var(--gold); border: none; padding: 0.4rem 0.8rem; border-radius: 20px; cursor: pointer; font-weight: bold; font-family: 'Montserrat', sans-serif; color: #fff;">+ Add</button>
+                        </div>
+                    </div>
+                    <div class="cart-item-row" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
+                        <div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.2rem; color: #2c1810;">Yuzu Cheesecake</h4>
+                            <p style="color: var(--text-light); font-size: 0.85rem;">Creamy cheesecake infused with Japanese citrus.</p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span style="font-weight: bold; font-size: 1rem; color: #2c1810;">$11.00</span>
+                            <button onclick="addToCart('Yuzu Cheesecake', 11.00)" style="background: var(--gold); border: none; padding: 0.4rem 0.8rem; border-radius: 20px; cursor: pointer; font-weight: bold; font-family: 'Montserrat', sans-serif; color: #fff;">+ Add</button>
+                        </div>
+                    </div>
+                    <div class="cart-item-row" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
+                        <div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.2rem; color: #2c1810;">Japanese Sake (Bottle)</h4>
+                            <p style="color: var(--text-light); font-size: 0.85rem;">Premium hot or cold sake (300ml).</p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span style="font-weight: bold; font-size: 1rem; color: #2c1810;">$35.00</span>
+                            <button onclick="addToCart('Japanese Sake (Bottle)', 35.00)" style="background: var(--gold); border: none; padding: 0.4rem 0.8rem; border-radius: 20px; cursor: pointer; font-weight: bold; font-family: 'Montserrat', sans-serif; color: #fff;">+ Add</button>
+                        </div>
+                    </div>
+                    <div class="cart-item-row" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
+                        <div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.2rem; color: #2c1810;">Jasmine Tea</h4>
+                            <p style="color: var(--text-light); font-size: 0.85rem;">Traditional hot steeped jasmine green tea.</p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span style="font-weight: bold; font-size: 1rem; color: #2c1810;">$5.00</span>
+                            <button onclick="addToCart('Jasmine Tea', 5.00)" style="background: var(--gold); border: none; padding: 0.4rem 0.8rem; border-radius: 20px; cursor: pointer; font-weight: bold; font-family: 'Montserrat', sans-serif; color: #fff;">+ Add</button>
                         </div>
                     </div>
                 </div>
