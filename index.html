@@ -1003,11 +1003,13 @@
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#menu">Menu</a>
+            <a href="#ordercart">Order Online</a>
             <a href="#gallery">Gallery</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
+    <!-- HERO SECTION -->
     <!-- HERO SECTION -->
     <section class="hero" id="home">
         <div class="hero-content">
@@ -1020,7 +1022,6 @@
             </div>
         </div>
     </section>
-
     <!-- ABOUT SECTION -->
     <section class="about" id="about">
         <div class="about-content">
@@ -1051,7 +1052,72 @@
             <img class="zoomable-img" onclick="openLightbox(this.src)" src="img13.jpeg" alt="Asian King Restaurant">
         </div>
     </section>
+    <!-- BAKU SECTION -->
+    <section class="baku-section" id="baku">
+        <h2 class="section-title">Experience Beautiful Baku</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem auto; color: var(--text-light); font-size: 1.1rem; line-height: 1.8;">
+            Located in the heart of this stunning city, Asian King Restaurant perfectly blends the rich, ancient history of Baku with exquisite Asian culinary artistry. 
+            Enjoy your meal, then explore the magic of the Old City and the modern glow of the Flame Towers.
+        </p>
+        <div class="baku-grid">
+            <div class="baku-card">
+                <img class="zoomable-img" onclick="openLightbox(this.src)" src="baku_sea.png" alt="Caspian Sea Boulevard">
+                <div class="baku-content">
+                    <h3>Caspian Sea Boulevard</h3>
+                    <p>Enjoy a refreshing walk along the beautiful Milli Park before indulging in our exquisite Asian cuisine.</p>
+                </div>
+            </div>
+            <div class="baku-card">
+                <img class="zoomable-img" onclick="openLightbox(this.src)" src="baku_center.png" alt="Heydar Aliyev Center">
+                <div class="baku-content">
+                    <h3>Modern Masterpiece</h3>
+                    <p>A true architectural wonder representing the modern spirit of Baku. A must-see on your culinary journey.</p>
+                </div>
+            </div>
 
+            <div class="baku-card">
+                <img class="zoomable-img" onclick="openLightbox(this.src)" src="baku_city.png" alt="Baku Flame Towers at Sunset">
+                <div class="baku-content">
+                    <h3>Modern Elegance</h3>
+                    <p>Just steps away from the iconic Flame Towers and the beautiful Caspian Sea promenade. A perfect view after an unforgettable dining experience.</p>
+                </div>
+            </div>
+            <div class="baku-card">
+                <img class="zoomable-img" onclick="openLightbox(this.src)" src="baku_old_city.png" alt="Baku Old City">
+                <div class="baku-content">
+                    <h3>Ancient Charm</h3>
+                    <p>Nestled near the historic cobblestone streets of Icherisheher. Take a romantic evening stroll through the glowing, magical old town.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div style="margin-top: 6rem; width: 100%; max-width: 1200px; margin-left: auto; margin-right: auto; padding: 3rem 20px; background: rgba(212, 175, 55, 0.05); border-radius: 15px; border: 1px solid rgba(212, 175, 55, 0.2);">
+            <h3 style="text-align: center; color: var(--gold); margin-bottom: 3rem; font-family: 'Cinzel', serif; font-size: 2.5rem;">What Our Guests Say</h3>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <!-- Review 1 -->
+                <div style="background: #1a1a1a; padding: 2.5rem 2rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); text-align: center; position: relative; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div style="color: var(--gold); font-size: 1.5rem; margin-bottom: 1rem;">★★★★★</div>
+                    <p style="font-style: italic; color: #555; margin-bottom: 1.5rem; line-height: 1.6;">"The most authentic Asian cuisine in all of Baku! The flavors took me straight back to Tokyo. An absolute must-visit for food lovers."</p>
+                    <h4 style="color: #f5f5f5; font-family: 'Cinzel', serif; font-size: 1.2rem;">- Sarah M.</h4>
+                </div>
+                
+                <!-- Review 2 -->
+                <div style="background: #1a1a1a; padding: 2.5rem 2rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); text-align: center; position: relative; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div style="color: var(--gold); font-size: 1.5rem; margin-bottom: 1rem;">★★★★★</div>
+                    <p style="font-style: italic; color: #555; margin-bottom: 1.5rem; line-height: 1.6;">"Incredible atmosphere right near the Old City. The staff was incredibly welcoming and the signature dishes were phenomenal."</p>
+                    <h4 style="color: #f5f5f5; font-family: 'Cinzel', serif; font-size: 1.2rem;">- David L.</h4>
+                </div>
+                
+                <!-- Review 3 -->
+                <div style="background: #1a1a1a; padding: 2.5rem 2rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); text-align: center; position: relative; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div style="color: var(--gold); font-size: 1.5rem; margin-bottom: 1rem;">★★★★★</div>
+                    <p style="font-style: italic; color: #555; margin-bottom: 1.5rem; line-height: 1.6;">"We booked a table for our anniversary, and Asian King made it an unforgettable night. The best 10/10 dining experience in town."</p>
+                    <h4 style="color: #f5f5f5; font-family: 'Cinzel', serif; font-size: 1.2rem;">- Elena R.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- MENU SECTION -->
     <section class="menu-section" id="menu">
         <h2 class="section-title">Our Exquisite Menu</h2>
@@ -1113,6 +1179,115 @@
         </script>
     </section>
 
+    <!-- ONLINE ORDERING / CART SECTION -->
+    <section class="order-cart-section" id="ordercart" style="padding: 4rem 5%; background: var(--dark-cream);">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 class="section-title" style="color: var(--text-dark);">Order Delivery Online</h2>
+            
+            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 3rem;">
+                <!-- Menu Items -->
+                <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                    <h3 style="font-family: 'Cinzel', serif; margin-bottom: 1.5rem; border-bottom: 2px solid var(--gold); padding-bottom: 0.5rem; color: var(--gold);">Popular Dishes</h3>
+                    
+                    <div class="cart-item-row" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
+                        <div>
+                            <h4 style="font-size: 1.2rem; margin-bottom: 0.2rem; color: #2c1810;">Signature Sushi Boat</h4>
+                            <p style="color: var(--text-light); font-size: 0.9rem;">Assorted premium sushi and sashimi for 2.</p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span style="font-weight: bold; font-size: 1.1rem; color: #2c1810;">$65.00</span>
+                            <button onclick="addToCart('Signature Sushi Boat', 65.00)" style="background: var(--gold); border: none; padding: 0.5rem 1rem; border-radius: 20px; cursor: pointer; font-weight: bold; font-family: 'Montserrat', sans-serif; color: #fff;">+ Add</button>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-item-row" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
+                        <div>
+                            <h4 style="font-size: 1.2rem; margin-bottom: 0.2rem; color: #2c1810;">Spicy Miso Ramen</h4>
+                            <p style="color: var(--text-light); font-size: 0.9rem;">Authentic Japanese ramen with roasted pork belly.</p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span style="font-weight: bold; font-size: 1.1rem; color: #2c1810;">$18.50</span>
+                            <button onclick="addToCart('Spicy Miso Ramen', 18.50)" style="background: var(--gold); border: none; padding: 0.5rem 1rem; border-radius: 20px; cursor: pointer; font-weight: bold; font-family: 'Montserrat', sans-serif; color: #fff;">+ Add</button>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-item-row" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
+                        <div>
+                            <h4 style="font-size: 1.2rem; margin-bottom: 0.2rem; color: #2c1810;">Peking Duck Platter</h4>
+                            <p style="color: var(--text-light); font-size: 0.9rem;">Crispy skin duck served with pancakes and hoisin sauce.</p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span style="font-weight: bold; font-size: 1.1rem; color: #2c1810;">$42.00</span>
+                            <button onclick="addToCart('Peking Duck Platter', 42.00)" style="background: var(--gold); border: none; padding: 0.5rem 1rem; border-radius: 20px; cursor: pointer; font-weight: bold; font-family: 'Montserrat', sans-serif; color: #fff;">+ Add</button>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-item-row" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0;">
+                        <div>
+                            <h4 style="font-size: 1.2rem; margin-bottom: 0.2rem; color: #2c1810;">Mango Sticky Rice</h4>
+                            <p style="color: var(--text-light); font-size: 0.9rem;">Traditional Thai dessert with sweet coconut milk.</p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span style="font-weight: bold; font-size: 1.1rem; color: #2c1810;">$12.00</span>
+                            <button onclick="addToCart('Mango Sticky Rice', 12.00)" style="background: var(--gold); border: none; padding: 0.5rem 1rem; border-radius: 20px; cursor: pointer; font-weight: bold; font-family: 'Montserrat', sans-serif; color: #fff;">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cart Summary -->
+                <div style="background: #fafafa; border: 2px solid var(--gold); padding: 2rem; border-radius: 12px; height: fit-content;">
+                    <h3 style="font-family: 'Cinzel', serif; margin-bottom: 1.5rem; text-align: center; color: var(--gold);">Your Cart</h3>
+                    <ul id="cart-items" style="list-style: none; margin-bottom: 1.5rem; min-height: 100px; padding: 0;">
+                        <li id="empty-cart-msg" style="color: var(--text-light); text-align: center; font-style: italic;">Your cart is empty.</li>
+                    </ul>
+                    <hr style="border: none; border-top: 2px dashed #ccc; margin-bottom: 1rem;">
+                    <div style="display: flex; justify-content: space-between; font-size: 1.3rem; font-weight: bold; margin-bottom: 2rem; color: #2c1810;">
+                        <span>Total:</span>
+                        <span id="cart-total">$0.00</span>
+                    </div>
+                    <button onclick="proceedToCheckout()" style="width: 100%; background: linear-gradient(135deg, var(--gold) 0%, var(--deep-yellow) 100%); color: #0a0a0a; padding: 1rem; border: none; border-radius: 30px; font-weight: bold; cursor: pointer; text-transform: uppercase;">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PAYMENT / ORDER ONLINE SECTION -->
+    <section class="order-online-section" id="checkout" style="padding: 2rem 5% 6rem; background: var(--cream);">
+        <div class="payment-section" style="width: 100%; max-width: 1000px; margin-left: auto; margin-right: auto; padding: 4rem 2rem; background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%); border-radius: 15px; border-top: 4px solid var(--gold); text-align: center; box-shadow: 0 20px 50px rgba(0,0,0,0.5);">
+            <h3 style="color: var(--gold); margin-bottom: 1rem; font-family: 'Cinzel', serif; font-size: 2.5rem;">Payment Checkout</h3>
+            <p style="color: var(--text-light); margin-bottom: 3rem; font-size: 1.1rem;">Total Amount: <span id="payment-display-total" style="color: #25D366; font-weight: bold;">$0.00</span></p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+                <div class="payment-method active" id="pay-card" onclick="selectPayment('card')" style="border: 2px solid var(--gold); border-radius: 12px; padding: 2rem; cursor: pointer; transition: all 0.3s ease; background: rgba(212, 175, 55, 0.1);">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">💳</div>
+                    <h4 style="color: white; font-family: 'Cinzel', serif; font-size: 1.3rem;">Debit / Credit Card</h4>
+                </div>
+                <div class="payment-method" id="pay-bank" onclick="selectPayment('bank')" style="border: 2px solid #555; border-radius: 12px; padding: 2rem; cursor: pointer; transition: all 0.3s ease; background: transparent;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🏦</div>
+                    <h4 style="color: white; font-family: 'Cinzel', serif; font-size: 1.3rem;">Bank Transfer</h4>
+                </div>
+            </div>
+            
+            <div id="card-form" style="display: block; text-align: left; background: #121212; padding: 3rem; border-radius: 12px; border: 1px solid #333;">
+                <input type="text" placeholder="Cardholder Name" style="width: 100%; padding: 1.2rem; margin-bottom: 1.5rem; background: #0a0a0a; border: 1px solid #444; color: white; border-radius: 8px; font-family: 'Montserrat', sans-serif; font-size: 1rem;">
+                <input type="text" placeholder="Card Number (0000 0000 0000 0000)" style="width: 100%; padding: 1.2rem; margin-bottom: 1.5rem; background: #0a0a0a; border: 1px solid #444; color: white; border-radius: 8px; font-family: 'Montserrat', sans-serif; font-size: 1rem;">
+                <div style="display: flex; gap: 1.5rem;">
+                    <input type="text" placeholder="MM/YY" style="width: 50%; padding: 1.2rem; background: #0a0a0a; border: 1px solid #444; color: white; border-radius: 8px; font-family: 'Montserrat', sans-serif; font-size: 1rem;">
+                    <input type="text" placeholder="CVC" style="width: 50%; padding: 1.2rem; background: #0a0a0a; border: 1px solid #444; color: white; border-radius: 8px; font-family: 'Montserrat', sans-serif; font-size: 1rem;">
+                </div>
+            </div>
+            
+            <div id="bank-form" style="display: none; text-align: left; background: #121212; padding: 3rem; border-radius: 12px; border: 1px solid #333;">
+                <p style="color: var(--text-light); margin-bottom: 1.5rem; font-size: 1.1rem;">Transfer funds to our account and upload your payment receipt.</p>
+                <div style="background: #0a0a0a; padding: 2rem; border: 1px solid var(--gold); border-radius: 8px; margin-bottom: 2rem;">
+                    <p style="color: white; font-family: monospace; font-size: 1.2rem; line-height: 1.8;">Bank: <span style="color: var(--gold);">International Bank of Azerbaijan</span><br>Account Name: <span style="color: var(--gold);">Asian King LLC</span><br>IBAN: <span style="color: var(--gold);">AZ12IBAZ0000123456789012345</span></p>
+                </div>
+                <label style="color: white; margin-bottom: 0.5rem; display: block; font-family: 'Montserrat', sans-serif;">Upload Receipt:</label>
+                <input type="file" style="color: white; background: #0a0a0a; padding: 1rem; border: 1px solid #444; border-radius: 8px; width: 100%;">
+            </div>
+
+            <button onclick="processPayment()" id="pay-btn" style="margin-top: 3rem; width: 100%; background: linear-gradient(135deg, var(--gold) 0%, var(--deep-yellow) 100%); color: #0a0a0a; padding: 1.5rem; border: none; border-radius: 12px; font-weight: 700; font-size: 1.2rem; font-family: 'Montserrat', sans-serif; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 2px; box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);">Complete Order</button>
+        </div>
+    </section>
     <!-- GALLERY SECTION -->
     <section class="gallery-section" id="gallery">
         <h2 class="section-title">Gallery</h2>
@@ -1175,118 +1350,6 @@
             </div>
         </div>
     </section>
-
-    <!-- BAKU SECTION -->
-    <section class="baku-section" id="baku">
-        <h2 class="section-title">Experience Beautiful Baku</h2>
-        <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem auto; color: var(--text-light); font-size: 1.1rem; line-height: 1.8;">
-            Located in the heart of this stunning city, Asian King Restaurant perfectly blends the rich, ancient history of Baku with exquisite Asian culinary artistry. 
-            Enjoy your meal, then explore the magic of the Old City and the modern glow of the Flame Towers.
-        </p>
-        <div class="baku-grid">
-            <div class="baku-card">
-                <img class="zoomable-img" onclick="openLightbox(this.src)" src="baku_city.png" alt="Baku Flame Towers at Sunset">
-                <div class="baku-content">
-                    <h3>Modern Elegance</h3>
-                    <p>Just steps away from the iconic Flame Towers and the beautiful Caspian Sea promenade. A perfect view after an unforgettable dining experience.</p>
-                </div>
-            </div>
-            <div class="baku-card">
-                <img class="zoomable-img" onclick="openLightbox(this.src)" src="baku_old_city.png" alt="Baku Old City">
-                <div class="baku-content">
-                    <h3>Ancient Charm</h3>
-                    <p>Nestled near the historic cobblestone streets of Icherisheher. Take a romantic evening stroll through the glowing, magical old town.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div style="margin-top: 6rem; width: 100%; max-width: 1200px; margin-left: auto; margin-right: auto; padding: 3rem 20px; background: rgba(212, 175, 55, 0.05); border-radius: 15px; border: 1px solid rgba(212, 175, 55, 0.2);">
-            <h3 style="text-align: center; color: var(--gold); margin-bottom: 3rem; font-family: 'Cinzel', serif; font-size: 2.5rem;">What Our Guests Say</h3>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                <!-- Review 1 -->
-                <div style="background: #1a1a1a; padding: 2.5rem 2rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); text-align: center; position: relative; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
-                    <div style="color: var(--gold); font-size: 1.5rem; margin-bottom: 1rem;">★★★★★</div>
-                    <p style="font-style: italic; color: #555; margin-bottom: 1.5rem; line-height: 1.6;">"The most authentic Asian cuisine in all of Baku! The flavors took me straight back to Tokyo. An absolute must-visit for food lovers."</p>
-                    <h4 style="color: #f5f5f5; font-family: 'Cinzel', serif; font-size: 1.2rem;">- Sarah M.</h4>
-                </div>
-                
-                <!-- Review 2 -->
-                <div style="background: #1a1a1a; padding: 2.5rem 2rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); text-align: center; position: relative; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
-                    <div style="color: var(--gold); font-size: 1.5rem; margin-bottom: 1rem;">★★★★★</div>
-                    <p style="font-style: italic; color: #555; margin-bottom: 1.5rem; line-height: 1.6;">"Incredible atmosphere right near the Old City. The staff was incredibly welcoming and the signature dishes were phenomenal."</p>
-                    <h4 style="color: #f5f5f5; font-family: 'Cinzel', serif; font-size: 1.2rem;">- David L.</h4>
-                </div>
-                
-                <!-- Review 3 -->
-                <div style="background: #1a1a1a; padding: 2.5rem 2rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); text-align: center; position: relative; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
-                    <div style="color: var(--gold); font-size: 1.5rem; margin-bottom: 1rem;">★★★★★</div>
-                    <p style="font-style: italic; color: #555; margin-bottom: 1.5rem; line-height: 1.6;">"We booked a table for our anniversary, and Asian King made it an unforgettable night. The best 10/10 dining experience in town."</p>
-                    <h4 style="color: #f5f5f5; font-family: 'Cinzel', serif; font-size: 1.2rem;">- Elena R.</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- LEAVE A REVIEW SECTION -->
-    <section class="review-section-container" id="reviews" style="padding: 4rem 5%; background: var(--cream);">
-        <div class="review-section" style="width: 100%; max-width: 800px; margin-left: auto; margin-right: auto; padding: 4rem 2rem; background: #1a1a1a; border-radius: 15px; border: 1px solid var(--gold); text-align: center; box-shadow: 0 15px 40px rgba(0,0,0,0.3);">
-            <h3 style="color: var(--gold); margin-bottom: 1rem; font-family: 'Cinzel', serif; font-size: 2.2rem;">Leave a Review</h3>
-            <p style="color: var(--text-light); margin-bottom: 2rem;">We value your feedback. Let us know how your experience was!</p>
-            
-            <div id="star-rating" style="font-size: 3rem; color: #555; margin-bottom: 2rem; cursor: pointer; transition: color 0.3s ease;">
-                <span class="star" onclick="rate(1)">★</span>
-                <span class="star" onclick="rate(2)">★</span>
-                <span class="star" onclick="rate(3)">★</span>
-                <span class="star" onclick="rate(4)">★</span>
-                <span class="star" onclick="rate(5)">★</span>
-            </div>
-            
-            <textarea id="review-text" rows="4" placeholder="Share your experience with us..." style="width: 100%; padding: 1.5rem; border-radius: 8px; border: 1px solid var(--gold); background: #0a0a0a; color: white; font-family: 'Montserrat', sans-serif; margin-bottom: 2rem; resize: vertical; font-size: 1rem;"></textarea>
-            
-            <button onclick="submitReview()" style="background: linear-gradient(135deg, var(--gold) 0%, var(--deep-yellow) 100%); color: #0a0a0a; padding: 1.2rem 3rem; border: none; border-radius: 30px; font-weight: 700; font-family: 'Montserrat', sans-serif; font-size: 1.1rem; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 1px;">Submit Review</button>
-        </div>
-    </section>
-
-    <!-- PAYMENT / ORDER ONLINE SECTION -->
-    <section class="order-online-section" id="order" style="padding: 2rem 5% 6rem; background: var(--cream);">
-        <div class="payment-section" style="width: 100%; max-width: 1000px; margin-left: auto; margin-right: auto; padding: 4rem 2rem; background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%); border-radius: 15px; border-top: 4px solid var(--gold); text-align: center; box-shadow: 0 20px 50px rgba(0,0,0,0.5);">
-            <h3 style="color: var(--gold); margin-bottom: 1rem; font-family: 'Cinzel', serif; font-size: 2.5rem;">Order Online</h3>
-            <p style="color: var(--text-light); margin-bottom: 3rem; font-size: 1.1rem;">Secure checkout for delivery or pickup.</p>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
-                <div class="payment-method active" id="pay-card" onclick="selectPayment('card')" style="border: 2px solid var(--gold); border-radius: 12px; padding: 2rem; cursor: pointer; transition: all 0.3s ease; background: rgba(212, 175, 55, 0.1);">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">💳</div>
-                    <h4 style="color: white; font-family: 'Cinzel', serif; font-size: 1.3rem;">Debit / Credit Card</h4>
-                </div>
-                <div class="payment-method" id="pay-bank" onclick="selectPayment('bank')" style="border: 2px solid #555; border-radius: 12px; padding: 2rem; cursor: pointer; transition: all 0.3s ease; background: transparent;">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🏦</div>
-                    <h4 style="color: white; font-family: 'Cinzel', serif; font-size: 1.3rem;">Bank Transfer</h4>
-                </div>
-            </div>
-            
-            <div id="card-form" style="display: block; text-align: left; background: #121212; padding: 3rem; border-radius: 12px; border: 1px solid #333;">
-                <input type="text" placeholder="Cardholder Name" style="width: 100%; padding: 1.2rem; margin-bottom: 1.5rem; background: #0a0a0a; border: 1px solid #444; color: white; border-radius: 8px; font-family: 'Montserrat', sans-serif; font-size: 1rem;">
-                <input type="text" placeholder="Card Number (0000 0000 0000 0000)" style="width: 100%; padding: 1.2rem; margin-bottom: 1.5rem; background: #0a0a0a; border: 1px solid #444; color: white; border-radius: 8px; font-family: 'Montserrat', sans-serif; font-size: 1rem;">
-                <div style="display: flex; gap: 1.5rem;">
-                    <input type="text" placeholder="MM/YY" style="width: 50%; padding: 1.2rem; background: #0a0a0a; border: 1px solid #444; color: white; border-radius: 8px; font-family: 'Montserrat', sans-serif; font-size: 1rem;">
-                    <input type="text" placeholder="CVC" style="width: 50%; padding: 1.2rem; background: #0a0a0a; border: 1px solid #444; color: white; border-radius: 8px; font-family: 'Montserrat', sans-serif; font-size: 1rem;">
-                </div>
-            </div>
-            
-            <div id="bank-form" style="display: none; text-align: left; background: #121212; padding: 3rem; border-radius: 12px; border: 1px solid #333;">
-                <p style="color: var(--text-light); margin-bottom: 1.5rem; font-size: 1.1rem;">Transfer funds to our account and upload your payment receipt.</p>
-                <div style="background: #0a0a0a; padding: 2rem; border: 1px solid var(--gold); border-radius: 8px; margin-bottom: 2rem;">
-                    <p style="color: white; font-family: monospace; font-size: 1.2rem; line-height: 1.8;">Bank: <span style="color: var(--gold);">International Bank of Azerbaijan</span><br>Account Name: <span style="color: var(--gold);">Asian King LLC</span><br>IBAN: <span style="color: var(--gold);">AZ12IBAZ0000123456789012345</span></p>
-                </div>
-                <label style="color: white; margin-bottom: 0.5rem; display: block; font-family: 'Montserrat', sans-serif;">Upload Receipt:</label>
-                <input type="file" style="color: white; background: #0a0a0a; padding: 1rem; border: 1px solid #444; border-radius: 8px; width: 100%;">
-            </div>
-
-            <button onclick="processPayment()" id="pay-btn" style="margin-top: 3rem; width: 100%; background: linear-gradient(135deg, var(--gold) 0%, var(--deep-yellow) 100%); color: #0a0a0a; padding: 1.5rem; border: none; border-radius: 12px; font-weight: 700; font-size: 1.2rem; font-family: 'Montserrat', sans-serif; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 2px; box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);">Complete Order</button>
-        </div>
-    </section>
-
     <!-- CONTACT SECTION -->
     <section class="contact-section" id="contact">
         <h2 class="section-title" style="color: var(--gold); margin-bottom: 3rem;">Get In Touch</h2>
@@ -1317,9 +1380,25 @@
             <iframe src="https://maps.google.com/maps?q=28%20Nizami%20Street,%20Baku,%20Azerbaijan&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="450" style="border:0; border-radius: 15px; box-shadow: 0 15px 40px rgba(0,0,0,0.2);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
-
-
-
+    <!-- LEAVE A REVIEW SECTION -->
+    <section class="review-section-container" id="reviews" style="padding: 4rem 5%; background: var(--cream);">
+        <div class="review-section" style="width: 100%; max-width: 800px; margin-left: auto; margin-right: auto; padding: 4rem 2rem; background: #1a1a1a; border-radius: 15px; border: 1px solid var(--gold); text-align: center; box-shadow: 0 15px 40px rgba(0,0,0,0.3);">
+            <h3 style="color: var(--gold); margin-bottom: 1rem; font-family: 'Cinzel', serif; font-size: 2.2rem;">Leave a Review</h3>
+            <p style="color: var(--text-light); margin-bottom: 2rem;">We value your feedback. Let us know how your experience was!</p>
+            
+            <div id="star-rating" style="font-size: 3rem; color: #555; margin-bottom: 2rem; cursor: pointer; transition: color 0.3s ease;">
+                <span class="star" onclick="rate(1)">★</span>
+                <span class="star" onclick="rate(2)">★</span>
+                <span class="star" onclick="rate(3)">★</span>
+                <span class="star" onclick="rate(4)">★</span>
+                <span class="star" onclick="rate(5)">★</span>
+            </div>
+            
+            <textarea id="review-text" rows="4" placeholder="Share your experience with us..." style="width: 100%; padding: 1.5rem; border-radius: 8px; border: 1px solid var(--gold); background: #0a0a0a; color: white; font-family: 'Montserrat', sans-serif; margin-bottom: 2rem; resize: vertical; font-size: 1rem;"></textarea>
+            
+            <button onclick="submitReview()" style="background: linear-gradient(135deg, var(--gold) 0%, var(--deep-yellow) 100%); color: #0a0a0a; padding: 1.2rem 3rem; border: none; border-radius: 30px; font-weight: 700; font-family: 'Montserrat', sans-serif; font-size: 1.1rem; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 1px;">Submit Review</button>
+        </div>
+    </section>
     <!-- FOOTER -->
     <footer>
         <div class="footer-content">
@@ -1516,6 +1595,67 @@
                     btn.style.boxShadow = '0 10px 30px rgba(212, 175, 55, 0.3)';
                 }, 4000);
             }, 2500);
+        }
+
+        // Shopping Cart Logic
+        let cart = [];
+        let cartTotal = 0;
+
+        function addToCart(item, price) {
+            cart.push({name: item, price: price});
+            updateCartUI();
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            updateCartUI();
+        }
+
+        function updateCartUI() {
+            let cartList = document.getElementById('cart-items');
+            cartList.innerHTML = '';
+            cartTotal = 0;
+            
+            if (cart.length === 0) {
+                cartList.innerHTML = '<li id="empty-cart-msg" style="color: var(--text-light); text-align: center; font-style: italic;">Your cart is empty.</li>';
+                document.getElementById('cart-total').innerText = '$0.00';
+                return;
+            }
+
+            cart.forEach((item, index) => {
+                cartTotal += item.price;
+                let li = document.createElement('li');
+                li.style.display = 'flex';
+                li.style.justifyContent = 'space-between';
+                li.style.marginBottom = '0.5rem';
+                li.style.color = '#2c1810';
+                li.innerHTML = `
+                    <span>${item.name}</span>
+                    <div>
+                        <span style="font-weight: bold; margin-right: 1rem;">$${item.price.toFixed(2)}</span>
+                        <button onclick="removeFromCart(${index})" style="background: transparent; border: none; color: red; cursor: pointer; font-size: 1.1rem;">×</button>
+                    </div>
+                `;
+                cartList.appendChild(li);
+            });
+
+            document.getElementById('cart-total').innerText = '$' + cartTotal.toFixed(2);
+        }
+
+        function proceedToCheckout() {
+            if (cart.length === 0) {
+                alert('Your cart is empty! Please add some items to your order first.');
+                return;
+            }
+            // Scroll to payment section and update the total display
+            let paymentDisplay = document.getElementById('payment-display-total');
+            if(paymentDisplay) {
+                paymentDisplay.innerText = '$' + cartTotal.toFixed(2);
+            }
+            let checkoutSection = document.getElementById('checkout');
+            if(checkoutSection) {
+                checkoutSection.scrollIntoView({behavior: 'smooth'});
+            }
         }
 
         // ==========================================
